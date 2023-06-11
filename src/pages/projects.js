@@ -5,7 +5,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/MusicVerse.png";
+import project2 from "../../public/images/projects/MessengerX.png";
+import project3 from "../../public/images/projects/Watchflix.png";
+import project4 from "../../public/images/projects/Portfolio.png";
+
 import  {motion} from 'framer-motion'
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -94,13 +98,13 @@ const Project = ({ title, type, img, link, github }) => {
         </Link>
         {/* <p className="my-2 font-medium text-dark">{summary} </p> */}
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link
+          {/* <Link
             href={link}
             target="_blank"
             className="text-lg font-semibold underline md:text-base"
           >
             Visit
-          </Link>
+          </Link> */}
           <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
@@ -119,7 +123,7 @@ const projects = () => {
       </Head>
 
       <TransitionEffect />
-      
+
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
@@ -127,7 +131,7 @@ const projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeaturedProject
                 title="crypto screener application"
                 img={project1}
@@ -138,32 +142,32 @@ const projects = () => {
                 github="/"
                 type="Featured Project"
               />
-            </div>
+            </div> */}
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="crypto screener application"
+                title="MusicVerse"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
+                // summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.
+                // It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your
+                // local currency."
+                link="https://musicverse-ph-in.vercel.app/"
+                github="https://github.com/koni24/musicverse"
                 type="Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="crypto screener application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
+                title="MessengerX"
+                img={project2}
+                // summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.
+                // It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your
+                // local currency."
+                link="https://talksync.vercel.app/"
+                github="https://github.com/koni24/messengerX"
                 type="Project"
               />
             </div>
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeaturedProject
                 title="crypto screener application"
                 img={project1}
@@ -174,8 +178,32 @@ const projects = () => {
                 github="/"
                 type="Featured Project"
               />
+            </div> */}
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Watchflix"
+                img={project3}
+                // summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.
+                // It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your
+                // local currency."
+                link="https://watchflix-zeta.vercel.app/"
+                github="https://github.com/koni24/Watchflix"
+                type="Project"
+              />
             </div>
             <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Portfolio"
+                img={project4}
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                local currency."
+                link="https://konisha-portfolio-final.vercel.app/"
+                github="https://github.com/koni24/konisha-portfolio-final"
+                type="Project"
+              />
+            </div>
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title="crypto screener application"
                 img={project1}
@@ -186,31 +214,7 @@ const projects = () => {
                 github="/"
                 type="Project"
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="crypto screener application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="crypto screener application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Project"
-              />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
