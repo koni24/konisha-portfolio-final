@@ -40,9 +40,9 @@ const Skills = () => {
         <Skill name="Javascript" x="20vw" y="6vw" />
         <Skill name="ReactJs" x="0vw" y="12vw" />
         <Skill name="NextJs" x="-20vw" y="-15vw" />
-        <Skill name="GatsbyJs" x="15vw" y="-12vw" />
-        <Skill name="web Design" x="32vw" y="-5vw" />
-        <Skill name="Figma" x="0vw" y="-20vw" />
+        <Skill name="MongoDB" x="15vw" y="-12vw" />
+        <Skill name="Supabase" x="32vw" y="-5vw" />
+        <Skill name="Typescript" x="0vw" y="-20vw" />
         <Skill name="Firebase" x="-25vw" y="18vw" />
         <Skill name="Tailwind CSS" x="18vw" y="18vw" />
       </div>

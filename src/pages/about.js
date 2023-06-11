@@ -38,45 +38,66 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>KonishaKar | About Page</title>
+        <title>Konisha Kar | About Page</title>
         <meta name="descrioption" content="any description" />
       </Head>
 
       <TransitionEffect />
-      
+
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Passion Fuels Purpose!"
+            text="Passionate Web Developer Ready to Shape the Digital World"
             className={"mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"}
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I am CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients visions to life.
+                Hello! I'm Konisha Kar, a final year student pursuing a
+                Bachelor's degree in Computer Science. I am passionate about web
+                development and have been honing my skills in this field. With a
+                keen eye for design and a strong technical background, I strive
+                to create engaging and user-friendly web experiences.
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it is about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                Throughout my academic journey, I have gained a solid foundation
+                in programming languages such as HTML, CSS, and JavaScript,
+                along with frameworks like React and Angular. I enjoy leveraging
+                these technologies to bring ideas to life and build intuitive
+                websites that leave a lasting impact..
               </p>
-              <p className=" font-medium">
-                Whether I am working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              <p className="my-4 font-medium">
+                In addition to my technical expertise, I believe in the
+                importance of effective communication and collaboration. I enjoy
+                working in a team environment, leveraging my interpersonal
+                skills to understand client requirements and deliver solutions
+                that exceed expectations.
+              </p>
+              <p className="my-4 font-medium">
+                I am continuously exploring new trends and advancements in web
+                development to stay up-to-date with the rapidly evolving
+                industry. I thrive on challenges and constantly seek
+                opportunities to expand my skill set and embrace innovative
+                approaches.
+              </p>
+              <p className="my-4 font-medium">
+                This portfolio showcases some of the projects I have worked on,
+                demonstrating my ability to create responsive and visually
+                appealing websites. I am excited to embark on new ventures,
+                collaborate on exciting projects, and contribute to the
+                ever-evolving world of web development.
+              </p>
+              <p className="font-medium">
+                Thank you for visiting my portfolio, and I look forward to
+                connecting with you to discuss potential opportunities and
+                collaborations.
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+            <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
@@ -88,7 +109,7 @@ const about = () => {
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+            {/* <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center xl:items-centers">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={50} />+
@@ -117,11 +138,11 @@ const about = () => {
                   years of experiences
                 </h2>
               </div>
-            </div>
+            </div> */}
           </div>
           <Skills />
-          <Experience />
-          <Education />
+          {/* <Experience />
+          <Education /> */}
         </Layout>
       </main>
     </>
