@@ -114,7 +114,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | Projects Page</title>
+        <title>Konisha Kar | Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
 
