@@ -1,6 +1,16 @@
 import React from 'react'
 import Layout from './Layout'
 import Link from 'next/link'
+import { motion } from "framer-motion";
+import {
+  TwitterIcon,
+  DribbbleIcon,
+  GithubIcon,
+  LinkedInIcon,
+  PinterestIcon,
+  SunIcon,
+  MoonIcon,
+} from "./Icons";
 
 const Footer = () => {
   return (
@@ -28,9 +38,33 @@ const Footer = () => {
     //   </Layout>
     // </footer>
 
-
     <footer>
-      
+      <div className="waves">
+        <div className="wave" id="wave1"></div>
+        <div className="wave" id="wave2"></div>
+        <div className="wave" id="wave3"></div>
+        <div className="wave" id="wave4"></div>
+      </div>
+      <ul className="social_icon">
+        <motion.a
+          href="https://github.com/koni24"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 2 }}
+          className="w-6 mx-3"
+        >
+          <GithubIcon />
+        </motion.a>
+        <motion.a
+          href="https://github.com/koni24"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 2 }}
+          className="w-6 mx-3"
+        >
+          <GithubIcon />
+        </motion.a>
+      </ul>
     </footer>
   );
 }
