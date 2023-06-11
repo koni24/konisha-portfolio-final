@@ -56,11 +56,12 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hello! I'm Konisha Kar, a final year student pursuing a
-                Bachelor's degree in Computer Science. I am passionate about web
-                development and have been honing my skills in this field. With a
-                keen eye for design and a strong technical background, I strive
-                to create engaging and user-friendly web experiences.
+                Hello! I&apos;m Konisha Kar, a final year student pursuing a
+                Bachelor&apos;s degree in Computer Science. I am passionate
+                about web development and have been honing my skills in this
+                field. With a keen eye for design and a strong technical
+                background, I strive to create engaging and user-friendly web
+                experiences.
               </p>
               <p className="my-4 font-medium">
                 Throughout my academic journey, I have gained a solid foundation
